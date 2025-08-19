@@ -1,0 +1,188 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+nav {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00bcd4;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4.5rem;
+}
+nav .nav-links li a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #222;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+.hero-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.hero-content .btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.hero-image img {
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #1c1c1c;
+}
+.about-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+.about-text h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+}
+.about-text .btn {
+  background-color: #00bcd4;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Skills Section */
+.skills {
+  background-color: #222;
+  padding: 2rem;
+  text-align: center;
+}
+.skills h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills ul li {
+  display: inline-block;
+  background: #333;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #1c1c1c;
+  padding: 2rem;
+}
+.projects h2 {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+.project {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.project h3 {
+  color: #00bcd4;
+}
+.project a {
+  color: #03a9f4;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #222;
+  padding: 2rem;
+  text-align: center;
+}
+.contact h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+.contact p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    margin-left: 0;
+  }
+}
